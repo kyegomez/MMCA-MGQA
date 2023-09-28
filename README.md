@@ -42,6 +42,7 @@ print(tokens)
 The Multi-Modal Causal Attention (MMCA) mechanism is a novel approach to multi-modal learning that combines the strengths of causal attention and cross attention. It is designed to handle both visual and textual data, making it particularly useful for tasks that involve both types of data, such as image captioning, visual question answering, and multi-modal translation.
 
 The MMCA mechanism is unique in its use of MultiGrouped Query Attention (MGQA), a variant of the attention mechanism that allows for more flexible and efficient attention computations. This report provides an in-depth analysis of the MMCA mechanism, focusing on its architecture, operation, and potential benefits for multi-modal learning.
+
 ---
 
 ## Architecture
