@@ -6,11 +6,11 @@ class SimpleMMCA(nn.Module):
         self,
         dim,
         heads,
-        kv_heads = 2,
-        dropout=0.1,
-        causal=False,
-        qk_norm=False,
-        flash=False
+        kv_heads = 2, #number of kv heads
+        dropout = 0.1,
+        causal = False,
+        qk_norm = False,
+        flash = False
     ):
         super().__init__()
         
@@ -44,15 +44,22 @@ class SimpleMMCA(nn.Module):
             flash=flash
         )
     
-    def forward(self, visual_features, textual_features):
+    def forward(self, v, t):
         # Self attention for visual tokens
-        visual_attention_output = self.visual_self_attn(visual_features)[0]
+        visual_attention_output = self.visual_self_attn(
+            v
+        )[0]
 
         # Self attention for textual tokens
-        textual_self_attention_output = self.textual_self_attn(textual_features)[0]
+        textual_self_attention_output = self.textual_self_attn(
+            t
+        )[0]
 
         # Cross attention for textual tokens with visual features
-        cross_attention_output = self.cross_attn(textual_features + visual_attention_output)[0]
+        cross_attention_output = self.cross_attn(
+            t + 
+            visual_attention_output
+        )[0]
 
         # Combine the self attention and cross attention for textual tokens
         textual_attention_output = textual_self_attention_output + cross_attention_output
