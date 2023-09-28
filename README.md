@@ -3,7 +3,6 @@
 # Multi-Modal Casual Multi-Grouped Query Attention
 Experiments around using Multi-Modal Casual Attention with Multi-Grouped Query Attention
 
-
 # Appreciation
 * Lucidrains
 * Agorians
@@ -95,8 +94,6 @@ The MMCA mechanism can accelerate multi-modal learning in several ways:
 
 
 to finally conclude the Multi-Modal Causal Attention (MMCA) mechanism is a promising approach to multi-modal learning that combines the strengths of causal attention and cross attention. By using MultiGrouped Query Attention (MGQA), it allows for more flexible and efficient attention computations, which can help to improve the performance of the model on
-
-# Todo
 
 
 # License
