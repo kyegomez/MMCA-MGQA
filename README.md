@@ -1,17 +1,16 @@
 [![Multi-Modality](agorabanner.png)](https://discord.gg/qUtxnK2NMf)
 
-# Paper-Implementation-Template
-A simple reproducible template to implement AI research papers 
+# MMCA-MGQA
+Experiments around using Multi-Modal Casual Attention with Multi-Grouped Query Attention
 
-Paper Link
 
 # Appreciation
 * Lucidrains
 * Agorians
 
 
-
 # Install
+`pip install mmca-mgqa`
 
 # Usage
 
@@ -22,6 +21,3 @@ Paper Link
 
 # License
 MIT
-
-# Citations
-
