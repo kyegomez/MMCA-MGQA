@@ -1,6 +1,7 @@
 from torch import nn 
 from mgqa.attention import MGQA
 
+#MultiModalMultiGroupedQueryAttention
 class SimpleMMCA(nn.Module):
     def __init__(
         self,
