@@ -4,8 +4,8 @@ from mgqa.attention import MGQA
 class SimpleMMCA(nn.Module):
     def __init__(
         self,
-        dim,
-        heads,
+        dim = None,
+        heads = None,
         kv_heads = 2, #number of kv heads
         dropout = 0.1,
         causal = False,
