@@ -3,8 +3,8 @@ requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
-name = "mmmgqa"
-version = "0.0.2"
+name = "mmqqa"
+version = "0.0.4"
 description = "mmca-mgqa - Pytorch"
 license = "MIT"
 authors = ["Kye Gomez <kye@apac.ai>"]

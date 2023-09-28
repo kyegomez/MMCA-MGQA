@@ -10,7 +10,7 @@ Experiments around using Multi-Modal Casual Attention with Multi-Grouped Query A
 
 
 # Install
-`pip install mmmgqa`
+`pip install mmqqa`
 
 # Usage
 ```python
